@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start: 2011-03-19 04:02:28
+  stop: 2011-03-19 04:02:28
+  task_id: 1
+  log: MyText
+
+two:
+  start: 2011-03-19 04:02:28
+  stop: 2011-03-19 04:02:28
+  task_id: 1
+  log: MyText

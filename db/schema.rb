@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110319062750) do
+ActiveRecord::Schema.define(:version => 20110319080228) do
+
+  create_table "sprints", :force => true do |t|
+    t.datetime "start"
+    t.datetime "stop"
+    t.integer  "task_id"
+    t.text     "log"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tasks", :force => true do |t|
     t.string   "name"

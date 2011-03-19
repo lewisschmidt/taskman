@@ -1,4 +1,6 @@
 Taskman::Application.routes.draw do
+  resources :sprints
+
   resources :tasks
 
   # The priority is based upon order of creation:
