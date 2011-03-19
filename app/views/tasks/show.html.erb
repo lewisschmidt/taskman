@@ -10,6 +10,14 @@
   <%= @task.description %>
 </p>
 
+<p>
+  <b>Sprints</b>
+  <% @task.sprints.each do |sprint| %>
+    Start: <%= sprint.start %><br/>
+    Stop: <%= sprint.stop %><br />
+    Log: <%= sprint.log %><br />
+    <hr>
+  <% end %>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>
