@@ -14,7 +14,7 @@
   <tr>
     <td><%= task.name %></td>
     <td><%= task.created_at %></td>
-    <td><%= task.description %></td>
+    <td><%= task.description.strftime("%A %B %d, %Y %H:%M") %></td>
     <td><%= link_to 'Show', task %></td>
     <td><%= link_to 'Edit', edit_task_path(task) %></td>
     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
