@@ -1,8 +1,9 @@
 <h1>Listing tasks</h1>
 
-<table>
+<table border="1"1>
   <tr>
     <th>Name</th>
+    <th>Date Stamp</th>
     <th>Description</th>
     <th></th>
     <th></th>
@@ -12,6 +13,7 @@
 <% @tasks.each do |task| %>
   <tr>
     <td><%= task.name %></td>
+    <td><%= task.created_at %></td>
     <td><%= task.description %></td>
     <td><%= link_to 'Show', task %></td>
     <td><%= link_to 'Edit', edit_task_path(task) %></td>
